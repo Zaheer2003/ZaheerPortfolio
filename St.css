@@ -1,0 +1,236 @@
+/* General Styles for the Certificates Section */
+:root {
+  --body-color: #fff;
+  --color-white: rgb(255, 255, 255);
+  --text-color-second: rgb(68, 68, 68);
+  --text-color-third: rgb(30, 133, 171);
+  --first-color: rgb(110, 87, 224);
+  --first-color-hover: rgb(40, 91, 212);
+  --second-color: rgb(0, 200, 255);
+  --third-color: #ffffff;
+  --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ----- NAVIGATION BAR ----- */
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  background: var(--body-color);
+  padding-inline: 9vw;
+  transition: .3s;
+  z-index: 100;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-color-third);
+}
+.nav-menu,
+.nav_menu_list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav_list {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color-second);
+  font-weight: 500;
+  padding-inline: 15px;
+  margin-inline: 20px;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: var(--first-color);
+}
+.active-link {
+  position: relative;
+  color: var(--first-color);
+  transition: color 0.3s;
+}
+.active-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background: var(--first-color);
+  border-radius: 50%;
+}
+.fa-solid {
+  color: red;
+  font-size: 10px;
+}
+
+/* ----- CERTIFICATES SECTION ----- */
+#certificate {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+.top-header {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.top-header h1 {
+  font-weight: 600;
+  color: var(--text-color-second);
+  margin-bottom: 10px;
+}
+.top-header span {
+  color: #826ae5;
+}
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.about-containers {
+  max-width: 800px;
+  width: 100%;
+}
+.details-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--first-shadow-color);
+  padding: 20px;
+  text-align: center;
+}
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+article {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+article i {
+  font-size: 2rem;
+  color: var(--third-color);
+}
+article h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+article p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+.btn {
+  background: var(--second-color);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.4s;
+}
+.btn:hover {
+  background: var(--first-color-hover);
+}
+
+/* ----- PROJECTS SECTION ----- */
+#projects {
+  padding: 40px 20px;
+}
+.color-container {
+  background: var(--third-color);
+  padding: 20px;
+  border-radius: 1rem;
+}
+.project-img {
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+.project-title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: black;
+}
+.project-btn {
+  color: black;
+  border: 1px solid #a3a3a3;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.section__pic-container {
+  margin: 20px 0;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background: #f8f8f8;
+  padding: 40px 0;
+}
+.footer-social-icons {
+  display: flex;
+  gap: 30px;
+}
+.bottom-footer {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .nav-menu,
+  .nav_menu_list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-link {
+    padding: 10px 0;
+  }
+  .experience-details-container,
+  .about-containers {
+    padding: 0 20px;
+  }
+  .details-container {
+    padding: 15px;
+  }
+  .article-container {
+    gap: 10px;
+  }
+  article {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
