@@ -224,6 +224,7 @@ article p {
 .btn:hover {
   background: var(--first-color-hover);
 }
+
 /* ----- PROJECTS SECTION ----- */
 #projects {
   padding: 40px 20px;
@@ -235,8 +236,9 @@ article p {
 }
 .project-img {
   border-radius: 1rem;
-  max-width: 100%;
-  height: auto;
+  max-width: 80%; /* Decrease the width to 80% of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the entire area */
 }
 .project-title {
   margin-top: 10px;
@@ -254,6 +256,13 @@ article p {
 }
 .section__pic-container {
   margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-img {
+    max-width: 100%; /* Allow the image to take full width on smaller screens */
+  }
 }
 
 /* ----- FOOTER ----- */
