@@ -89,6 +89,17 @@ srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
 
 
+/* --Projects-- */
+function openCertificatePage() {
+  window.location.href = "certificate-page.html";
+}
+function openProjectsPage() {
+  window.location.href = "projects-page.html";
+}
+function openClientsPage() {
+  window.location.href = "clients-page.html";
+}
+
 
 /* ----- CHANGE ACTIVE LINK ----- */
 
@@ -115,3 +126,6 @@ sections.forEach(current =>{
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+
