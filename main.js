@@ -94,7 +94,7 @@ function openCertificatePage() {
   window.location.href = "certificate-page.html";
 }
 function openProjectsPage() {
-  window.location.href = "projects-page.html";
+  window.location.href = "Projects-page.html";
 }
 function openClientsPage() {
   window.location.href = "clients-page.html";
