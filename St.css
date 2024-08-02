@@ -73,6 +73,11 @@ nav {
   font-size: 10px;
 }
 
+
+
+
+
+
 /* ----- CERTIFICATES SECTION ----- */
 #certificate {
   background-color: #f9f9f9;
@@ -148,7 +153,6 @@ article p {
 .btn:hover {
   background: var(--first-color-hover);
 }
-
 /* ----- PROJECTS SECTION ----- */
 #projects {
   padding: 40px 20px;
