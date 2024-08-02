@@ -83,7 +83,7 @@ body{
 }
 
 /* ----- NAVIGATION BAR ----- */
-nav {
+nav{
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -95,48 +95,48 @@ nav {
     transition: .3s;
     z-index: 100;
 }
-.nav-logo {
-    position: relative;
+.nav-logo{
+   position: relative;
 }
-.nav-name {
+.nav-name{
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
 }
-.nav-logo span {
+.nav-logo span{
     position: absolute;
     top: -15px;
     right: -20px;
     font-size: 5em;
     color: var(--text-color-second);
 }
-.nav-menu, .nav_menu_list {
+.nav-menu, .nav_menu_list{
     display: flex;
 }
-.nav-menu .nav_list {
+.nav-menu .nav_list{
     list-style: none;
     position: relative;
 }
-.nav-link {
+.nav-link{
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
 }
-.nav-menu-btn {
+.nav-menu-btn{
     display: none;
 }
-.nav-menu-btn i {
+.nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
 }
-.active-link {
+.active-link{
     position: relative;
     color: var(--first-color);
     transition: .3;
 }
-.active-link::after {
+.active-link::after{
     content: '';
     position: absolute;
     left: 50%;
@@ -147,14 +147,9 @@ nav {
     background: var(--first-color);
     border-radius: 50%;
 }
-.fa-solid {
-    color: red;
-    font-size: 10px;
-}
-
-/* Adjust the content below the fixed navbar */
-.content {
-    margin-top: 90px; /* Same height as the navbar */
+.fa-solid{
+	color: red;
+	size: 10px;
 }
 
 
