@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="St.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Clients</h1>
-        <div id="clients-container">
-            <!-- Client items will be added here dynamically -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--------- FONTAWESOME ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="Stylesheet" href="St.css">
+
+        <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="professional-portfolio.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css">
+  </head>
+
+  <body>
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name"><i class="fa-solid fa-gem"></i> Mohamed Zaheer  </p>
+            <span></span>
         </div>
-        <button onclick="addClient()">More Add Clients Details</button>
-    </div>
-    <script src="Main.js"></script>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+
+                <li class="nav_list">
+                  <a href="#certificate-page.html" class="nav-link active-link">Books</a>
+                  <div class="circle"></div>
+              </li>
+
+            </ul>
+        </div>
+      </nav> 
+
+    
+<section class="section" id="certificate" >
+  <div class="top-header">
+    <h1>Certificates</h1>
+            <article>
+                <i class="uil uil-award"></i>
+              <div>
+                <h3>The Psychology of Money</h3>
+                <p>Writer Morgon</p>
+              </div>
+              <div>
+                <button
+                  class="btn"  
+                  onclick="window.open('Coursera.pdf')"
+                >
+                  View Certificate <i class="uil uil-eye"></i> 
+                </button>
+            </article>
+  </section>
+ 
+<footer>
+  <div class="footer-social-icons">
+    <div class="icon"><a href="https://www.instagram.com/chamath_upeka/" class="iiicc"><i class="uil uil-instagram"></i></a></div>
+        <div class="icon"><a href="https://www.linkedin.com/in/mohamed-zaheer-335292246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="iiicc"><i class="uil uil-linkedin-alt"></i></a></div>
+        <div class="icon"><a href="https://www.facebook.com/mohamed.zaheer.7169?mibextid=ZbWKwL" class="iiicc"><i class="uil uil-facebook-f"></i></a></div>
+        <div class="icon"><a href="https://github.com/Zaheer2003" class="iiicc"><i class="uil uil-github-alt"></i></a></div>
+</div>
+
+<div class="bottom-footer">
+    <p>Copyright &copy; <a href="certificate-page.html"text-decoration: none;">Mohamed Zaheer</a> - All rights reserved</p>
+</div> 
+
+</footer>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+<script src="Script.js"></script>
 </body>
 </html>
